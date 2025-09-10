@@ -52,6 +52,7 @@ public class kruskal {
         int parB = find(b);
 
         if (rank[parA] == rank[parB]){
+            par[parA] = parB;
             rank[parB]++;
         }
         else if (rank[parA] < rank[parB]){
@@ -88,3 +89,4 @@ public class kruskal {
         System.out.println(kruskalMSTGreedy(edges));
     }
 }
+
